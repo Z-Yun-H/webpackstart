@@ -2,6 +2,7 @@
     <div>
         webpack cli
         <router-link to="/">Go back home</router-link>
+        
         <router-view></router-view>
     </div>
 </template>
