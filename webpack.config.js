@@ -33,11 +33,20 @@ module.exports = {
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "src"),
+            "#": path.resolve(__dirname, "src/computents"),
         },
     },
     devServer: {
         static: path.resolve(__dirname + "/dist"),
-        port: 8080,
+        open: true,
+        port: 'auto',
+        onListening: function (devServer) {
+            console.log("server is listening, port is " + devServer.server.address().port);
+        },
+        // 热模块替换
+        hot: true,
     },
     plugins: [new VueLoaderPlugin()],
+    // 源代码映射
+    devtool: "source-map",
 };
