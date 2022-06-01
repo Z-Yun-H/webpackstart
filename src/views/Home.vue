@@ -8,6 +8,8 @@
         <child v-model="value"></child>
         <button @click="$router.push('./about')">关于页面</button>
         <button @click="goabout">跳转关于页面</button>
+
+        
     </div>
 </template>
 
