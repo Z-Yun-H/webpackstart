@@ -2,7 +2,7 @@
     <div>
         webpack cli
         <router-link to="/">Go back home</router-link>
-        
+        gittest
         <router-view></router-view>
     </div>
 </template>
