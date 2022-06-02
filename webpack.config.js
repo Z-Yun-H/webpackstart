@@ -33,13 +33,13 @@ module.exports = {
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "src"),
-            "#": path.resolve(__dirname, "src/computents"),
+            "#": path.resolve(__dirname, "src/components"),
         },
     },
     devServer: {
         static: path.resolve(__dirname + "/dist"),
         open: true,
-        port: 'auto',
+        port: "auto",
         onListening: function (devServer) {
             console.log("server is listening, port is " + devServer.server.address().port);
         },
